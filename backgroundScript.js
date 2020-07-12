@@ -1,19 +1,16 @@
 //backgroundScript.js
 // content script accesses page but background script does useful things
 
-chrome.browserAction.onClicked.addListener(function(tab) {
-    
-    chrome.tabs.executeScript(tab.id, {
-        "file": "contentScript.js"
-    });
-    // Send a message to the active tab
-    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        var activeTab = tabs[0];
-        chrome.tabs.sendMessage(activeTab.id, {"message": "clicked_browser_action"});
-    });
-});
+console.log("background script");
 
-// Called when the user clicks on the browser action.
-chrome.browserAction.onClicked.addListener(function(tab) {
-    
+console.log("bakcground", document.domain); //It outputs id of extension to console
+chrome.tabs.query({ //This method output active URL 
+    "active": true,
+    "currentWindow": true,
+    "status": "complete",
+    "windowType": "normal"
+}, function (tabs) {
+    for (tab in tabs) {
+        console.log(tabs[tab].url);
+    }
 });

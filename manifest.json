@@ -5,7 +5,7 @@
   "description": "Round is a chrome extension that allows you to 'round up' your purchase and donate the extra to a nonprofit of choice",
   
   "background": {
-    "scripts": ["jquery.js", "backgroundScript.js"]
+    "scripts": ["backgroundScript.js"]
   },
 
   "content_scripts": [
@@ -13,7 +13,7 @@
       "matches": [
         "<all_urls>"
       ],
-      "js": ["jquery.js", "contentScript.js"]
+      "js": ["contentScript.js"]
     }
   ],
 
@@ -21,5 +21,7 @@
     "default_popup": "popup.html"
   },
 
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
 }
