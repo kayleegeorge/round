@@ -117,6 +117,54 @@
     </style>
 </head>
 <body>
+  <script type = "text/javascript">
+      var round = 0.81
+      var original = 0.81;
+      window.onload = function() {
+        document.getElementById("rounded").innerHTML = round
+      }
+      function add() {
+        if(round != 0) {
+          round += 1
+        }
+        else {
+          round = original
+        }
+        document.getElementById("rounded").innerHTML = round
+      }
+      function subtract() {
+        if (round - 1 > 0) {
+          round -=1
+        }
+        else{
+          round = 0
+        }
+        document.getElementById("rounded").innerHTML = round
+      }
+
+  </script>
+
+  <h1>ROUND</h1>
+  <div class ="maincontainer">
+    <h2>Your purchase total</h2>
+    <h1>$45.19</h1>
+    <br><br>
+    <h2>Your Round</h2>
+    <div class = "container">
+      <button class="button button1" onclick="subtract()">-</button>
+      <h6><div id = "rounded"></div></h6>
+      <button class="button button2" onclick="add()">+</button>
+    </div>
+    </div>
+
+  </div>
+  <br>
+  <h3>Organization</h3>
+  <p>Black Visions Collective</p>
+  <h4>change organization</h4>
+  <br>
+  <button class= "button button3">Donate my Round!</button>
+  <h5>not this time</h5>
 
   <h1>ROUND</h1>
   <div class ="maincontainer">
