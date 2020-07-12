@@ -1,120 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="popup.js"></script>
-
   <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> 
   <style>
-      body {
-        background-color: SkyBlue;
-        font-family: 'Nunito';
-        font-size: 16px; 
-        text-align:center;
-        line-height: 6px;
-        width: 300px;
-        height: 400px;
-      }
-      h1 {
-        color: black;
-        font-family: 'Nunito';
-        font-size: 22px;
-        text-align:center;
-        padding-top:14px;
-        padding-bottom:10px;
-      }
-      h6 {
-        color: black;
-        font-family: 'Nunito';
-        font-size: 22px;
-        text-align:center;
-        display: inline-block;
-      }
-      .maincontainer {
-        background-color: white;
-        width: 70%;
-        height:50%;
-        margin-left:15%;
-        margin-top:10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-radius:15px;
-      }
-      h2 {
-        font-family: 'Nunito';
-        font-size: 16px;
-        text-align:center;
-        color: grey;
-        line-height: 2px;
-      }
-      .container {
-        margin-top: -40px;
-        margin-bottom:-30px;
-      }
-      .button1 {
-        font-family: 'Verdana';
-        padding-right:10px;
-        cursor:pointer;
-        outline: none;
-        background-color:white;
-        border: none;
-        color: grey;
-        display: inline-block;
-  
-      }
-      .button2 {
-        font-family: 'Verdana';
-        padding-left:5px;
-        cursor:pointer;
-        outline:none;
-        border:none;
-        background-color:white;
-        border: none;
-        color: grey;
-        display: inline-block;
-        padding-bottom:10px;
-  
-      }
-      .button3 {
-        padding:3px;
-        cursor:pointer;
-        outline:none;
-        border:none;
-        background-color:white;
-        border: none;
-        color: dimgrey;
-        padding:8px;
-        padding-left:10px;
-        padding-right:10px;
-        text-align:center;
-        border-radius: 30px;
-        color:black;
-        margin-bottom:-7px;
-        display: inline-block;
-        font-style: bold;
-        font-family: 'Nunito';
-      }
-  
-      h3 {
-        font-size: 16px;
-        color:dimgrey;
-        text-decoration: underline;
-        text-align:center;
-      }
-      h4 {
-        font-size:11px;
-        font-style: italic;
-        color:lightslategrey;
-        text-align:center;
-        margin-top:-1px;
-      }
-      h5 {
-        font-size:11px;
-        text-decoration: underline;
-        color:lightslategrey;
-        text-align:center;
-      }
-    </style>
+    body {
+      background-color: SkyBlue;
+      font-family: 'Nunito';
+      font-size: 16px; 
+      text-align:center;
+      line-height: 6px;
+      width: 300px;
+      height: 300px;
+    }
+    .div1 {
+      padding-bottom:5px;
+    }
+
+
+    h1 {
+      color: black;
+      font-family: 'Nunito';
+      font-size: 22px;
+      text-align:center;
+      padding-top:10px;
+      padding-bottom:3px;
+    }
+
+    h6 {
+      color: black;
+      font-family: 'Nunito';
+      font-size: 22px;
+      text-align:center;
+      display: inline-block;
+    }
+    .maincontainer {
+      background-color: white;
+      width: 80%;
+      height:45%;
+      margin-left:10%;
+      margin-top:8px;
+      padding-top: 8px;
+      border-radius:15px;
+    }
+    h2 {
+      font-family: 'Nunito';
+      font-size: 16px;
+      text-align:center;
+      color: grey;
+      line-height: 1px;
+
+    }
+    .container {
+      margin-top: -40px;
+
+    }
+    .button1 {
+      font-family: 'Verdana';
+      padding-right:10px;
+      cursor:pointer;
+      outline: none;
+      background-color:white;
+      border: none;
+      color: grey;
+      display: inline-block;
+
+    }
+    .button2 {
+      font-family: 'Verdana';
+      padding-left:5px;
+      cursor:pointer;
+      outline:none;
+      border:none;
+      background-color:white;
+      border: none;
+      color: grey;
+      display: inline-block;
+
+    }
+    .button3 {
+      padding:3px;
+      cursor:pointer;
+      outline:none;
+      border:none;
+      background-color: orangered;
+      border: none;
+      color: dimgrey;
+      padding:8px;
+      padding-left:13px;
+      padding-right:13px;
+      text-align:center;
+      border-radius: 30px;
+      color: white;
+      margin-bottom:-7px;
+      display: inline-block;
+      font-style: bold;
+      font-family: 'Nunito';
+      font-size: 16px;
+    }
+
+    h3 {
+      font-size: 16px;
+      color:dimgrey;
+      text-decoration: underline;
+      text-align:center;
+    }
+    h4 {
+      font-size:11px;
+      font-style: italic;
+      color:lightslategrey;
+      text-align:center;
+      margin-top:-1px;
+    }
+    h5 {
+      font-size:11px;
+      text-decoration: underline;
+      color:lightslategrey;
+      text-align:center;
+    }
+  </style>
 </head>
 <body>
   <script type = "text/javascript">
@@ -147,14 +150,14 @@
   <h1>ROUND</h1>
   <div class ="maincontainer">
     <h2>Your purchase total</h2>
+    <div class = "div2"></div>
     <h1>$45.19</h1>
-    <br><br>
+    <div class = "div1"></div>
     <h2>Your Round</h2>
     <div class = "container">
       <button class="button button1" onclick="subtract()">-</button>
       <h6><div id = "rounded"></div></h6>
       <button class="button button2" onclick="add()">+</button>
-    </div>
     </div>
 
   </div>
@@ -164,29 +167,11 @@
   <h4>change organization</h4>
   <br>
   <button class= "button button3">Donate my Round!</button>
-  <h5>not this time</h5>
-
-  <h1>ROUND</h1>
-  <div class ="maincontainer">
-    <h2>Your purchase total</h2>
-    <div id="price"><h1>price goes here</h1></div>
-    <br><br>
-    <h2>Your Round</h2>
-    <div class = "container">
-      <button class="button button1" onclick="subtract()">-</button>
-      <h6><div id = "rounded"></div></h6>
-      <button class="button button2" onclick="add()">+</button>
-    </div>
-    </div>
-
-  </div>
-  <br>
-  <h3>Organization</h3>
-  <p>Black Visions Collective</p>
-  <h4>change organization</h4>
-  <br>
-  <button class= "button button3">Donate my Round!</button>
-  <h5>not this time</h5>
+  <div class = "div1"></div>
+  <div class = "div1"></div>
+  <div class = "div1"></div>
+  <div class = "div1"></div>
+  <h4>not this time</h4>
 
 
 </body>
